@@ -5,3 +5,4 @@ sudo xrandr -q
 for screen in $(sudo xrandr -q| grep " connected" | cut -d " " -f 1); do
 sudo xrandr --addmode $screen 1920x1080_60.00
 done
+ 
